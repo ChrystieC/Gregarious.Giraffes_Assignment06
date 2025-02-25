@@ -21,7 +21,7 @@
     <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="Chrystie\module1.py">
+    <Compile Include="Chrystie\Chrystie.py">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="Chrystie\__init__.py">
