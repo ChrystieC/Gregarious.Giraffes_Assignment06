@@ -34,6 +34,12 @@
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="Gregarious.Giraffes_Assignment06.py" />
+    <Compile Include="main\main.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="main\__init__.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="Nikki\__init__.py">
       <SubType>Code</SubType>
     </Compile>
@@ -47,6 +53,7 @@
   <ItemGroup>
     <Folder Include="Chrystie\" />
     <Folder Include="Dylan\" />
+    <Folder Include="main\" />
     <Folder Include="Nikki\" />
     <Folder Include="Richie\" />
   </ItemGroup>
