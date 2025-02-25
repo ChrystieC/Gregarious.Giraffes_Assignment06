@@ -40,6 +40,7 @@
     <Compile Include="main\__init__.py">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="Nikki\nikki.py" />
     <Compile Include="Nikki\__init__.py">
       <SubType>Code</SubType>
     </Compile>
