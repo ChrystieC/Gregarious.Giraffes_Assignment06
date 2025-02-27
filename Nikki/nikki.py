@@ -23,15 +23,13 @@ class Building(object):
         @param name: the name of the building
         @param height: the height of the building
         """
-        self.get_name(name)
+        self.__name = name
         self.set_height(height)
-
     def get_name(self):
         """
         @return String: the name of the campus object
         """
         return self.__name
-
     def set_height(self, height):
         """
         Assign a value to the height of the building
@@ -51,9 +49,9 @@ class Building(object):
         @return String: A human-readable basic representation of the current object. 
         Useful for debugging, documentation, etc.
         """
-        return "Campus Object:" + self.__type
+        return f"Campus Object: {self.__name}"
     def gets_destroyed(self):
         self.__height = None
-        print("They knocked it down :(")
-
-
+        print("They finally knocked down Crosley Tower!")
+ 
+ 
