@@ -10,7 +10,7 @@ from Richie.stadium import *
  
  
 if __name__ == "__main__":
-
+    
     """
     crosley = Building("Crosley", 1000)
     print("This is the building:", crosley.get_name())
@@ -18,8 +18,8 @@ if __name__ == "__main__":
     crosley.gets_destroyed()
     """
     try:
-        name = input("Enter the name of the building: ")
-        height = input("Enter the height of the building: ")
+        name = "Crosley"
+        height = input("Enter the estimated height of Crosley Tower: ")
         
         # Creating an instance of Building
         building = Building(name, height)
@@ -32,6 +32,9 @@ if __name__ == "__main__":
         destroy = input("Do you want to knock down the building? (yes/no): ")
         if destroy.lower() == "yes":
             building.gets_destroyed()
+        else:
+            building.gets_saved()
+
         
     except Exception as e:
         print("Error:", e)
@@ -58,24 +61,52 @@ if __name__ == "__main__":
     except Exception as e:
         print("Error:", e)
 
+   
 
-
-try:
-        occupancy = input("How many people are in the stadium: ")
-        score = input("Did the Bearcats score a touchdown? (yes/no): ")
+    try:
+            name = "Nippert"
+            occupancy = input("How many people are in the stadium: ")
+            score = input("Did the Bearcats score a touchdown? (yes/no): ")
         
-        # Creating an instance of stadium
-        nippertStadium = stadium(occupancy, score)
+            # Creating an instance of stadium
+            nippertStadium = stadium(name, occupancy, score)
         
-        # Displaying object details
-        print(nippertStadium)
-        print(f"Nippert can hold: {nippertStadium.get_occupancy()} people")
+            # Displaying object details
+            print(nippertStadium)
+            print(f"Nippert can hold: {nippertStadium.get_occupancy()} people")
         
-        # Simulate winning
-        win = input("Do you want the Bearcats to win? (yes/no): ")
-        if win.lower() == "yes":
-            nippertStadium.gets_win()
+            # Simulate winning
+            win = input("Do you want the Bearcats to win? (yes/no): ")
+            if win.lower() == "yes":
+                nippertStadium.gets_win()
     
     except Exception as e:
+       print("Error:", e)
+
+
+    try:
+        current_floor = int(input("Enter the elevator's starting floor: "))
+        min_floor = int(input("Enter the minimum floor of the building: "))
+        max_floor = int(input("Enter the maximum floor of the building: "))
+
+        building_elevator = Elevator(current_floor, min_floor, max_floor)
+
+        print(building_elevator)
+
+        action = input("Would you like to move the elevator up or down? (up/down/exit): ").lower()
+
+        if action == "up":
+                building_elevator.go_up()
+        elif action == "down":
+                building_elevator.go_down()
+        elif action == "exit":
+                print("Exiting elevator simulation.")
+        else:
+            print("Invalid input. Please enter 'up', 'down', or 'exit'.")
+
+    except Exception as e:
         print("Error:", e)
+
+
+
 
