@@ -1,4 +1,4 @@
-# File Name : Chrystie.py
+# File Name : Elevator.py
 # Student Name: Chrystie Cadet
 # email:  cadetce@mail.uc.edu
 # Assignment Number: Assignment 06
