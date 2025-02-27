@@ -17,21 +17,21 @@ class Building(object):
     """
     Model a building on campus to be knocked down. Give it at least one property using a getter and a setter, as well as a method. 
     """
-
     def __init__(self, name, height):
         """
         Constructor
         @param name: the name of the building
         @param height: the height of the building
         """
-        self.get_name(name)
+        self.__name = name
         self.set_height(height)
+ 
     def get_name(self):
         """
         @return String: the name of the campus object
         """
         return self.__name
-
+ 
     def set_height(self, height):
         """
         Assign a value to the height of the building
@@ -41,21 +41,20 @@ class Building(object):
             raise Exception("Value cannot be blank. Height must be provided")
         else:
             self.__height = height
-
+ 
     def get_height(self):
         """
         @return String: the height of the current object
         """
-        return self.__height  # Corrected
-
+        return self.__height
     def __str__(self):
         """
         @return String: A human-readable basic representation of the current object. 
         Useful for debugging, documentation, etc.
         """
-        return "Campus Object:" + self.__type
+        return f"Campus Object: {self.__name}"
+ 
     def gets_destroyed(self):
         self.__height = None
         print("They finally knocked down Crosley Tower!")
- 
  

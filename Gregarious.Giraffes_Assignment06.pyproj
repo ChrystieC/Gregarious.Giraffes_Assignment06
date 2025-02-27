@@ -44,7 +44,7 @@
     <Compile Include="Nikki\__init__.py">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Richie\module1.py">
+    <Compile Include="Richie\stadium.py">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="Richie\__init__.py">
