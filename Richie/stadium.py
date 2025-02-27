@@ -7,7 +7,7 @@
 # Semester/Year:   Spring 2025
 # Brief Description of the assignment:  We are modeling the UC campus through different objects/buildings/aspects of the campus in different classes. 
 # Brief Description of what this module does. This module creates a class "nippert"  stadium, talking about its average score and how many people it holds
-# Citations: N/A
+# Citations: https://stackoverflow.com/questions/36030848/make-python-ask-questions-from-strings
 # Anything else that's relevant: N/A
 
 class stadium(object):
