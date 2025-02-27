@@ -7,8 +7,16 @@ from Nikki.nikki import *
 from Chrystie.Chrystie import *
 from Dylan.streetlights import *
 
+
 if __name__ == "__main__":
     crosley = Building("Crosley", 1000)
-    print("this the building:", crosley.get_name())
-    print("this is the height of the building:", crosley.get_height(), "feet")
+    print("This is the building:", crosley.get_name())
+    print("This is the height of the building:", crosley.get_height(), "feet")
+    crosley.gets_destroyed()
+
+    
+    streetlight = street_lights(100, "on")
+    print("There are", streetlight.get_number(), " street lights")
+
+
 
