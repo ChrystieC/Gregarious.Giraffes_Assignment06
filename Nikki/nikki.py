@@ -57,4 +57,8 @@ class Building(object):
     def gets_destroyed(self):
         self.__height = None
         print("They finally knocked down Crosley Tower!")
+
+    def gets_saved(self):
+        self.__height = None
+        print("Crosley stands another day!")
  

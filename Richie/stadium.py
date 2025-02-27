@@ -14,12 +14,13 @@ class stadium(object):
     """
     Model a building on campus to be knocked down. Give it at least one property using a getter and a setter, as well as a method. 
     """
-    def __init__(self, occupancy, score):
+    def __init__(self, name, occupancy, score):
         """
         Constructor
         @param occupancy: the number of people in the stadium
         @param score: question asking if the bearcats score
         """
+        self.__name = name
         self.__occupancy = occupancy
         self.set_score(score)
  
@@ -31,25 +32,31 @@ class stadium(object):
  
     def set_score(self, score):
         """
-        Assign a value to the height of the building
-        @param type String: the building height to be assigned
+        Assign a value to the score
+        @param score: The score to be assigned
         """
-        if len(str(score)) == 0:
-            raise Exception("Value cannot be blank. Height must be provided")
-        else:
-            self.__score = score
+        if not str(score).strip():
+            raise ValueError("Value cannot be blank. Score must be provided")
+        self.__score = score 
  
     def get_score(self):
         """
         @return String: the added score for the bearcats
         """
         return self.__score
+
+    def get_name(self):
+        """
+        @return String: the name of the campus object
+        """
+        return self.__name
+
+
     def __str__(self):
-        """
-        @return String: A description of the current string.
-        """
-        return f"stadium Object: {self.__name}"
+        """ @return String: A description of the current stadium object """
+        return f"Stadium Object: {self.__name}, Occupancy: {self.__occupancy}, Score: {self.__score}"
  
     def gets_win(self):
         self.__score = None
-        print("They finally scored a touchdown!")
+        print("They finally scored a touchdown!")  
+        
