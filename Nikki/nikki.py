@@ -54,6 +54,6 @@ class Building(object):
         return "Campus Object:" + self.__type
     def gets_destroyed(self):
         self.__height = None
-        print("They finally knocked down Crosley Tower!")
+        print("They knocked it down :(")
 
 
