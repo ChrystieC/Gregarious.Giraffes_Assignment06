@@ -4,7 +4,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>c6f7cc8e-2d75-48dd-8ca3-5a2c2915e8a2</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>Gregarious.Giraffes_Assignment06.py</StartupFile>
+    <StartupFile>main_Richie\main.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -21,23 +21,23 @@
     <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="Chrystie\module1.py">
+    <Compile Include="Chrystie\Chrystie.py">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="Chrystie\__init__.py">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Dylan\module1.py">
+    <Compile Include="Dylan\streetlights.py">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="Dylan\__init__.py">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="Gregarious.Giraffes_Assignment06.py" />
-    <Compile Include="main\main.py">
+    <Compile Include="main_Richie\main.py">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="main\__init__.py">
+    <Compile Include="main_Richie\__init__.py">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="Nikki\nikki.py" />
@@ -54,7 +54,7 @@
   <ItemGroup>
     <Folder Include="Chrystie\" />
     <Folder Include="Dylan\" />
-    <Folder Include="main\" />
+    <Folder Include="main_Richie\" />
     <Folder Include="Nikki\" />
     <Folder Include="Richie\" />
   </ItemGroup>

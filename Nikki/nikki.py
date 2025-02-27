@@ -23,7 +23,7 @@ class Building(object):
         @param name: the name of the building
         @param height: the height of the building
         """
-        self.set_name(name)
+        self.get_name(name)
         self.set_height(height)
 
     def get_name(self):
